@@ -3,6 +3,9 @@ const Stories = db.stories;
 
 // create a stories
 exports.create = (req, res) => {
+    console.log(req.body.stories);
+    console.log(req.body.name);
+    console.log(req.body.avatar);
     const story = new Stories({
         name: req.body.name,
         avatar: req.body.avatar,
